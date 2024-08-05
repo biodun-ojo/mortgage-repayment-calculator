@@ -1,2 +1,1 @@
-/* hello world */
-/* welcome */
+console.log (' hello world ')
