@@ -2,17 +2,24 @@
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: hsl(202, 86%, 94%);
 }
 
 /* left */
 
-
+.left {
+    background-color: white;
+}
 
 /* right */
 
 .right {
     color: white;
     background-color: hsl(202, 55%, 16%);
+}
+
+.completed {
+    display: none;
 }
 
 .attribution {
