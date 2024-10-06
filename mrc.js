@@ -10,7 +10,7 @@ function output() {
     let hn = parseInt(mortgageTerm.value * 12)
     let ko = (parseFloat(interestRate.value) / 100)/12
 
-    let sum = (rt * (ko * Math.pow(1 + ko, hn))) / (Math.pow(1 + ko, hn) - 1);
+    let sum = Math.floor((rt * (ko * Math.pow(1 + ko, hn))) / (Math.pow(1 + ko, hn) - 1));
     //let sum = rt((ko(1+ko)**hn)/(((1+ko)**hn)-1))
 
     console.log(sum) 
