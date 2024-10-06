@@ -1,12 +1,19 @@
 console.log ('lets do this')
 
-const mortgageAmount = document.getElementsByClassName('mortA')
-const mortgageTerm = document.getElementsByClassName('mortT') 
-const interestRate = document.getElementsByClassName('interRate')
+const mortgageAmount = document.getElementById('mortA')
+const mortgageTerm = document.getElementById('mortT') 
+const interestRate = document.getElementById('interRate')
 const button = document.getElementById('calculator')
 
 function output() {
-    return 2
+    let rt = parseFloat(mortgageAmount.value)
+    let hn = parseInt(mortgageTerm.value * 12)
+    let ko = (parseFloat(interestRate.value) / 100)/12
+
+    let sum = (rt * (ko * Math.pow(1 + ko, hn))) / (Math.pow(1 + ko, hn) - 1);
+    //let sum = rt((ko(1+ko)**hn)/(((1+ko)**hn)-1))
+
+    console.log(sum) 
 }
 
-button.addEventListener('click', () => console.log(output()))
+button.addEventListener('click', () => output())
