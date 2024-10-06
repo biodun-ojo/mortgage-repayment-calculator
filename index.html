@@ -32,49 +32,49 @@
       </div>
 
       <div>
-        <h6>Mortgage Amount</h6>
+        <h6 class="mt-3 mb-2">Mortgage Amount</h6>
         <div class="d-flex rounded-2 hello">
           <div class="px-3 py-2 rounded lilB"> &pound; </div>
-          <input class="w-100 rounded">
+          <input class="w-100 rounded mortA">
         </div>
       </div>
 
       <div>
-        <h6>Mortgage Term</h6>
+        <h6 class="mt-3 mb-2">Mortgage Term</h6>
         <div class="d-flex rounded-2 hello">
-          <input class="w-100 rounded">
+          <input class="w-100 rounded mortT">
           <div class="px-3 py-2 rounded lilB">years</div>
         </div>
       </div>
 
       <div title="Interest Rate">
-        <h6>Interest Rate</h6>
+        <h6 class="mt-3 mb-2">Interest Rate</h6>
         <div class="d-flex rounded-2 hello">
-          <input class="w-100 rounded">
+          <input class="w-100 rounded interRate">
           <div class="px-3 py-2 rounded lilB">%</div>
         </div>
       </div>
 
       <div>
 
-        <div>
+        <div class="my-2 mt-3">
           Mortgage Type
         </div>
 
-        <div>
-          <input type="radio" name="mt">
+        <div class="border-1 w-100 my-2 rounded-2 p-2 types">
+          <input type="radio" name="mt" class="m-2">
           <label>Repayment</label>
         </div>
 
-        <div>
-          <input type="radio" name="mt">
+        <div class="border-1 w-100 my-2 rounded-2 p-2 types">
+          <input type="radio" name="mt" class="m-2">
           <label>Interest Only</label>
         </div>
 
       </div>
 
-      <button class="rounded-pill border-0 mr-auto">
-        <img src="assets/images/icon-calculator.svg" alt="">
+      <button class="rounded-pill border-0 w-100 m-auto p-3 mt-3" id="calculator">
+        <img src="assets/images/icon-calculator.svg" alt="calculator image">
         Calculate Repayments
       </button>
     </section>
@@ -83,35 +83,47 @@
       <div class="w-100">
         <!-- Empty results start -->
 
-        <div class="empty">
+        <div class="empty text-center d-none">
           <img class="d-block mx-auto" src="assets/images/illustration-empty.svg">
+          <h4 class="my-3">Results shown here</h4>
           <p>
-            Results shown here
-
             Complete the form and click “calculate repayments” to see what
             your monthly repayments would be.
           </p>
         </div>
 
-        <!-- Empty results end -->
-
         <!-- Completed results start -->
-        <div class="completed">
-          Your results
+        <div class="completed d-block">
+          <h4>Your results</h4>
 
-          Your results are shown below based on the information you provided.
-          To adjust the results, edit the form and click “calculate repayments” again.
+          <p class="para">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate repayments” again.
+          </p>
 
-          Your monthly repayments
+          <div class="rounded-3 p-4 mt-4 summ">
+            <div class="mont">
+              <p>Your monthly repayments</p>
+              <div>
+                &pound; 1000
+              </div>
+            </div>
 
-          Total you'll repay over the term
+            <hr>
+
+            <div class="total">
+              <p>Total you'll repay over the term</p>
+              <div>
+                &pound; 100,000
+              </div>
+            </div>
+          </div>
 
         </div>
         <!-- Completed results end -->
       </div>
     </section>
   </div>
-
 
   <div class="d-none attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.

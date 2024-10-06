@@ -1,0 +1,78 @@
+/* begin */
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: hsl(202, 86%, 94%);
+}
+
+/* left */
+
+.left {
+    background-color: white;
+
+    .hello {
+        border: 1px solid hsl(200, 24%, 40%);
+
+        .lilB {
+            background-color: hsl(202, 86%, 94%);
+            width: fit-content;
+        }
+
+        input {
+            border: 0;
+
+            &:focus {
+                outline: none; 
+            }
+        }
+    }
+
+    .types {
+        border: solid;
+    }
+
+    button {
+        background-color: hsl(61, 70%, 52%);
+    }
+}
+
+/* right */
+
+.right {
+    color: white;
+    background-color: hsl(203, 58%, 20%);
+
+    .empty {
+        p {
+            color: hsla(0, 0%, 100%, 0.568);
+        }
+    }
+
+    .completed {
+        display: none;
+    
+        .para {
+            color: hsla(0, 0%, 100%, 0.568);
+        }
+
+        .summ {
+            background-color: hsl(202, 55%, 16%);
+            border-top: 5px solid hsl(61, 70%, 52%);
+
+            p {
+                color: hsla(0, 0%, 100%, 0.568);
+            }
+        }
+    }
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -1,49 +1,62 @@
 /* begin */
-
 body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    background-color: hsl(202, 86%, 94%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(202, 86%, 94%);
 }
 
 /* left */
-
 .left {
-    background-color: white;
-
-    .hello {
-        border: 1px solid hsl(200, 24%, 40%);
-
-        .lilB {
-            background-color: hsl(202, 86%, 94%);
-            width: fit-content;
-        }
-
-        input {
-            border: 0;
-
-            &:focus {
-                border: 0;
-            }
-        }
-    }
+  background-color: white;
+}
+.left .hello {
+  border: 1px solid hsl(200, 24%, 40%);
+}
+.left .hello .lilB {
+  background-color: hsl(202, 86%, 94%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.left .hello input {
+  border: 0;
+}
+.left .hello input:focus {
+  outline: none;
+}
+.left .types {
+  border: solid;
+}
+.left button {
+  background-color: hsl(61, 70%, 52%);
 }
 
 /* right */
-
 .right {
-    color: white;
-    background-color: hsl(202, 55%, 16%);
+  color: white;
+  background-color: hsl(203, 58%, 20%);
 }
-
-.completed {
-    display: none;
+.right .empty p {
+  color: hsla(0, 0%, 100%, 0.568);
+}
+.right .completed {
+  display: none;
+}
+.right .completed .para {
+  color: hsla(0, 0%, 100%, 0.568);
+}
+.right .completed .summ {
+  background-color: hsl(202, 55%, 16%);
+  border-top: 5px solid hsl(61, 70%, 52%);
+}
+.right .completed .summ p {
+  color: hsla(0, 0%, 100%, 0.568);
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
-}
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=mrc.css.map */
