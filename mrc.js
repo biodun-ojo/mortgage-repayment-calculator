@@ -20,13 +20,13 @@ function output() {
         console.log('Option 1 is selected');
         //repayment type
 
-        let monpay = ((principal * (InterestRat * Math.pow(1 + InterestRat, loanTerm))) / (Math.pow(1 + InterestRat, loanTerm) - 1));
+        let monpay = Math.floor((principal * (InterestRat * Math.pow(1 + InterestRat, loanTerm))) / (Math.pow(1 + InterestRat, loanTerm) - 1));
         //let sum = rt((ko(1+ko)**hn)/(((1+ko)**hn)-1))
 
         let totalrepayment = monpay * loanTerm
 
-        monthrepay.textContent = monpay
-        totalrepay.textContent = totalrepayment
+        monthrepay.textContent = `£ ${monpay}`
+        totalrepay.textContent = `£ ${totalrepayment}`
 
         console.log(totalrepayment)
         console.log(monpay)
@@ -34,12 +34,12 @@ function output() {
     } else if (option2.checked) {
         console.log('Option 2 is selected');
 
-        let monpay = principal * InterestRat 
+        let monpay = Math.floor(principal * InterestRat) 
+        let paytot = monpay * loanTerm
+        let totalrepayment = paytot + principal
 
-        let totalrepayment = monpay * loanTerm
-
-        monthrepay.textContent = monpay
-        totalrepay.textContent = totalrepayment
+        monthrepay.textContent = `£ ${monpay}`
+        totalrepay.textContent = `£ ${totalrepayment}`
         
         console.log(totalrepayment)
         console.log(monpay)
