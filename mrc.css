@@ -4,6 +4,10 @@ body {
   background-color: hsl(202, 86%, 94%);
 }
 
+.subbody {
+  max-width: 800px;
+}
+
 /* left */
 .left {
   background-color: white;
