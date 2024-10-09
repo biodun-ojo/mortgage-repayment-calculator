@@ -13,6 +13,9 @@ body {
 .left {
   background-color: white;
 }
+.left .og {
+  background-color: white;
+}
 .left .hello {
   border: 1px solid hsl(200, 24%, 40%);
 }

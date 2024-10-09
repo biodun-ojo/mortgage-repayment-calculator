@@ -8,6 +8,8 @@ const monthrepay = document.getElementById('monthrepay')
 const totalrepay = document.getElementById('repaytotal')
 const option1 = document.getElementById('repayment')
 const option2 = document.getElementById('interestOnly')
+const clearbtn = document.getElementById('clear')
+const form = document.getElementById('left')
 
 
 function output() {
@@ -50,4 +52,17 @@ function output() {
     //interest only type
 }
 
+function clearz() {
+    const inputFields = document.querySelectorAll('input'); // Selects all input elements
+    for (const inputField of inputFields) {
+      inputField.value = '';
+    }
+    
+    const radioInputs = document.querySelectorAll('input[type="radio"]');
+    for (const radioInput of radioInputs) {
+      radioInput.checked = false;
+    }
+}
+
 button.addEventListener('click', () => output())
+clearbtn.addEventListener('click', () => clearz())
