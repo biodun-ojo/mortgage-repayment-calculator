@@ -4,17 +4,13 @@ body {
   background-color: hsl(202, 86%, 94%);
 }
 
-.subbody {
-  max-width: 800px;
-  /*margin-top: 300px;*/
-}
-
 /* left */
 .left {
   background-color: white;
 }
 .left .og {
   background-color: white;
+  text-decoration: underline;
 }
 .left .hello {
   border: 1px solid hsl(200, 24%, 40%);
@@ -34,7 +30,7 @@ body {
 .left .types {
   border: solid;
 }
-.left button {
+.left .button {
   background-color: hsl(61, 70%, 52%);
 }
 
@@ -59,12 +55,20 @@ body {
 .right .completed .summ p {
   color: hsla(0, 0%, 100%, 0.568);
 }
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.right .completed .summ .bigOne {
+  font-size: 40px;
+  color: hsl(61, 70%, 52%);
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+@media (min-width: 767px) {
+  .subbody {
+    max-width: 800px;
+    margin-top: 150px;
+  }
+  .left {
+    width: 400px;
+  }
+  .right {
+    width: 400px;
+  }
 }/*# sourceMappingURL=mrc.css.map */

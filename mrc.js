@@ -9,7 +9,8 @@ const totalrepay = document.getElementById('repaytotal')
 const option1 = document.getElementById('repayment')
 const option2 = document.getElementById('interestOnly')
 const clearbtn = document.getElementById('clear')
-const form = document.getElementById('left')
+const empty = document.getElementById('empty')
+const complete = document.getElementById('complete')
 
 
 function output() {
@@ -23,7 +24,6 @@ function output() {
         //repayment type
 
         let monpay = Math.floor((principal * (InterestRat * Math.pow(1 + InterestRat, loanTerm))) / (Math.pow(1 + InterestRat, loanTerm) - 1));
-        //let sum = rt((ko(1+ko)**hn)/(((1+ko)**hn)-1))
 
         let totalrepayment = monpay * loanTerm
 
@@ -36,33 +36,39 @@ function output() {
     } else if (option2.checked) {
         console.log('Option 2 is selected');
 
-        let monpay = Math.floor(principal * InterestRat) 
+        let monpay = Math.floor(principal * InterestRat)
         let paytot = monpay * loanTerm
         let totalrepayment = paytot + principal
 
         monthrepay.textContent = `£ ${monpay}`
         totalrepay.textContent = `£ ${totalrepayment}`
-        
+
         console.log(totalrepayment)
         console.log(monpay)
     } else {
         console.log('Neither option is selected');
     }
-
-    //interest only type
 }
 
 function clearz() {
     const inputFields = document.querySelectorAll('input'); // Selects all input elements
     for (const inputField of inputFields) {
-      inputField.value = '';
+        inputField.value = '';
     }
-    
+
     const radioInputs = document.querySelectorAll('input[type="radio"]');
     for (const radioInput of radioInputs) {
-      radioInput.checked = false;
+        radioInput.checked = false;
     }
 }
 
-button.addEventListener('click', () => output())
+function propDisplay() {
+    empty.style.display = 'none',
+    complete.style.display = 'block'
+}
+
+button.addEventListener('click', () => {
+    propDisplay()
+    output()
+})
 clearbtn.addEventListener('click', () => clearz())

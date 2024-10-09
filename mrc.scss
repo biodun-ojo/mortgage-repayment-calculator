@@ -5,11 +5,6 @@ body {
     background-color: hsl(202, 86%, 94%);
 }
 
-.subbody {
-    max-width: 800px;
-    /*margin-top: 300px;*/
-}
-
 /* left */
 
 .left {
@@ -17,6 +12,7 @@ body {
 
     .og {
         background-color: white;
+        text-decoration: underline;
     }
 
     .hello {
@@ -40,7 +36,7 @@ body {
         border: solid;
     }
 
-    button {
+    .button {
         background-color: hsl(61, 70%, 52%);
     }
 }
@@ -71,17 +67,27 @@ body {
             p {
                 color: hsla(0, 0%, 100%, 0.568);
             }
+
+            .bigOne {
+                font-size: 40px;
+                color: hsl(61, 70%, 52%);
+            }
         }
     }
 }
 
+@media (min-width: 767px) {
+    .subbody {
+        max-width: 800px;
+        margin-top: 150px;
+    }
 
+    .left {
+        width: 400px;
+    }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    .right {
+        width: 400px;
+    }
+    
 }

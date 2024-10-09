@@ -24,9 +24,9 @@
 <body>
   <!-- left side -->
   <!--  &#8358; naira symbol-->
-  <div class="mx-auto subbody">
+  <div class="mx-auto d-md-flex subbody">
     <section class="p-4 left">
-      <div>
+      <div class="mt-3">
         <h4>Mortgage Calculator</h4>
         <button class="border-0 og" id="clear">Clear All</button>
       </div>
@@ -35,14 +35,14 @@
         <h6 class="mt-3 mb-2">Mortgage Amount</h6>
         <div class="d-flex rounded-2 hello">
           <div class="px-3 py-2 rounded lilB"> &pound; </div>
-          <input class="w-100 rounded" id="mortA">
+          <input class="w-100 rounded ps-3" id="mortA">
         </div>
       </div>
 
       <div>
         <h6 class="mt-3 mb-2">Mortgage Term</h6>
         <div class="d-flex rounded-2 hello">
-          <input class="w-100 rounded" id="mortT">
+          <input class="w-100 rounded ps-3" id="mortT">
           <div class="px-3 py-2 rounded lilB">years</div>
         </div>
       </div>
@@ -50,7 +50,7 @@
       <div title="Interest Rate">
         <h6 class="mt-3 mb-2">Interest Rate</h6>
         <div class="d-flex rounded-2 hello">
-          <input class="w-100 rounded" id="interRate">
+          <input class="w-100 rounded ps-3" id="interRate">
           <div class="px-3 py-2 rounded lilB">%</div>
         </div>
       </div>
@@ -73,7 +73,7 @@
 
       </div>
 
-      <button class="rounded-pill border-0 w-100 m-auto p-3 mt-3" id="calculator">
+      <button class="rounded-pill border-0 w-100 m-auto p-3 mt-3 button" id="calculator">
         <img src="assets/images/icon-calculator.svg" alt="calculator image">
         Calculate Repayments
       </button>
@@ -83,7 +83,7 @@
       <div class="w-100">
         <!-- Empty results start -->
 
-        <div class="empty text-center d-none">
+        <div class="empty text-center" id="empty">
           <img class="d-block mx-auto" src="assets/images/illustration-empty.svg">
           <h4 class="my-3">Results shown here</h4>
           <p>
@@ -93,7 +93,7 @@
         </div>
 
         <!-- Completed results start -->
-        <div class="completed d-block">
+        <div class="completed" id="complete">
           <h4>Your results</h4>
 
           <p class="para">
@@ -104,7 +104,7 @@
           <div class="rounded-3 p-4 mt-4 summ">
             <div class="mont">
               <p>Your monthly repayments</p>
-              <div id="monthrepay">
+              <div class="fw-bolder bigOne" id="monthrepay">
                 &pound; ---
               </div>
             </div>
@@ -123,11 +123,6 @@
         <!-- Completed results end -->
       </div>
     </section>
-  </div>
-
-  <div class="d-none attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 
   <script src="mrc.js"></script>
