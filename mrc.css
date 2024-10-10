@@ -8,9 +8,13 @@ body {
 .left {
   background-color: white;
 }
+.left h6 {
+  color: hsl(200, 26%, 54%);
+}
 .left .og {
   background-color: white;
   text-decoration: underline;
+  color: hsl(200, 26%, 54%);
 }
 .left .hello {
   border: 1px solid hsl(200, 24%, 40%);
@@ -70,5 +74,6 @@ body {
   }
   .right {
     width: 400px;
+    padding-top: 70px !important;
   }
 }/*# sourceMappingURL=mrc.css.map */

@@ -10,9 +10,14 @@ body {
 .left {
     background-color: white;
 
+    h6 {
+        color: hsl(200, 26%, 54%);
+    }
+
     .og {
         background-color: white;
         text-decoration: underline;
+        color: hsl(200, 26%, 54%);
     }
 
     .hello {
@@ -88,6 +93,7 @@ body {
 
     .right {
         width: 400px;
+        padding-top: 70px !important;
     }
     
 }
