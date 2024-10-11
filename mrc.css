@@ -8,6 +8,9 @@ body {
 .left {
   background-color: white;
 }
+.left h5 {
+  font-weight: 900;
+}
 .left h6 {
   color: hsl(200, 26%, 54%);
 }
@@ -18,6 +21,9 @@ body {
 }
 .left .hello {
   border: 1px solid hsl(200, 24%, 40%);
+}
+.left .hello:hover {
+  cursor: pointer;
 }
 .left .hello .lilB {
   background-color: hsl(202, 86%, 94%);
@@ -31,11 +37,27 @@ body {
 .left .hello input:focus {
   outline: none;
 }
+.left .hello input:hover {
+  cursor: pointer;
+}
 .left .types {
   border: solid;
 }
+.left .types:hover {
+  cursor: pointer;
+  border-color: hsl(61, 70%, 52%);
+  background-color: hsla(60, 67%, 83%, 0.514);
+}
+.left .types input[type=radio] {
+  accent-color: hsl(61, 95%, 48%);
+  cursor: pointer;
+}
 .left .button {
   background-color: hsl(61, 70%, 52%);
+}
+.left .button:hover {
+  cursor: pointer;
+  background-color: hsl(61, 57%, 64%);
 }
 
 /* right */
@@ -68,12 +90,16 @@ body {
   .subbody {
     max-width: 800px;
     margin-top: 150px;
+    background-color: white;
+    border-radius: 20px;
   }
   .left {
     width: 400px;
+    border-radius: 20px 0 0 20px;
   }
   .right {
     width: 400px;
     padding-top: 70px !important;
+    border-radius: 0 20px 20px 50px;
   }
 }/*# sourceMappingURL=mrc.css.map */

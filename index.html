@@ -25,9 +25,9 @@
   <!-- left side -->
   <!--  &#8358; naira symbol-->
   <div class="mx-auto d-md-flex subbody">
-    <section class="p-4 left">
-      <div class="mt-3">
-        <h4>Mortgage Calculator</h4>
+    <form class="p-4 left" formnovalidate>
+      <div class="mt-3 d-md-flex justify-content-between">
+        <h5>Mortgage Calculator</h5>
         <button class="border-0 og" id="clear">Clear All</button>
       </div>
 
@@ -64,22 +64,22 @@
         </h6>
 
         <div class="border-1 w-100 my-2 rounded-2 p-2 types">
-          <input type="radio" name="mt" class="m-2" id="repayment">
-          <label>Repayment</label>
+          <input type="radio" name="mt" class="m-2 input" id="repayment">
+          <label class="fw-bolder">Repayment</label>
         </div>
 
         <div class="border-1 w-100 my-2 rounded-2 p-2 types">
-          <input type="radio" name="mt" class="m-2" id="interestOnly">
-          <label>Interest Only</label>
+          <input type="radio" name="mt" class="m-2 input" id="interestOnly">
+          <label class="fw-bolder">Interest Only</label>
         </div>
 
       </div>
 
-      <button class="rounded-pill border-0 w-100 m-auto p-3 mt-3 button" id="calculator">
+      <button class="rounded-pill border-0 w-100 m-auto p-3 mt-3 fw-bolder button" type="submit" id="calculator">
         <img src="assets/images/icon-calculator.svg" alt="calculator image">
         Calculate Repayments
       </button>
-    </section>
+    </form>
 
     <section class="p-4 right">
       <div class="w-100">
@@ -87,7 +87,7 @@
 
         <div class="empty text-center" id="empty">
           <img class="d-block mx-auto" src="assets/images/illustration-empty.svg">
-          <h4 class="my-3">Results shown here</h4>
+          <h4 class="my-3 fw-bolder">Results shown here</h4>
           <p>
             Complete the form and click “calculate repayments” to see what
             your monthly repayments would be.

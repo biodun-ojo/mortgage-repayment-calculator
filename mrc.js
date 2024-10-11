@@ -67,7 +67,8 @@ function propDisplay() {
     complete.style.display = 'block'
 }
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (event) => {
+    event.preventDefault();
     propDisplay()
     output()
 })

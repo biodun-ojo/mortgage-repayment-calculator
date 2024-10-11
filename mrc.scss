@@ -10,6 +10,10 @@ body {
 .left {
     background-color: white;
 
+    h5 {
+        font-weight: 900;
+    }
+
     h6 {
         color: hsl(200, 26%, 54%);
     }
@@ -23,6 +27,10 @@ body {
     .hello {
         border: 1px solid hsl(200, 24%, 40%);
 
+        &:hover {
+            cursor: pointer;
+        }
+
         .lilB {
             background-color: hsl(202, 86%, 94%);
             width: fit-content;
@@ -32,17 +40,37 @@ body {
             border: 0;
 
             &:focus {
-                outline: none; 
+                outline: none;
+            }
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }
 
     .types {
         border: solid;
+
+        &:hover {
+            cursor: pointer;
+            border-color: hsl(61, 70%, 52%);
+            background-color: hsla(60, 67%, 83%, 0.514);
+        }
+
+        input[type='radio'] {
+            accent-color: hsl(61, 95%, 48%);
+            cursor: pointer;
+        }
     }
 
     .button {
         background-color: hsl(61, 70%, 52%);
+
+        &:hover {
+            cursor: pointer;
+            background-color: hsl(61, 57%, 64%);
+        }
     }
 }
 
@@ -60,7 +88,7 @@ body {
 
     .completed {
         display: none;
-    
+
         .para {
             color: hsla(0, 0%, 100%, 0.568);
         }
@@ -85,15 +113,19 @@ body {
     .subbody {
         max-width: 800px;
         margin-top: 150px;
+        background-color: white;
+        border-radius: 20px;
     }
 
     .left {
         width: 400px;
+        border-radius: 20px 0 0 20px;
     }
 
     .right {
         width: 400px;
         padding-top: 70px !important;
+        border-radius: 0 20px 20px 50px;
     }
-    
+
 }
