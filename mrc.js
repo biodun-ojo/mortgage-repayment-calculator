@@ -11,6 +11,7 @@ const option2 = document.getElementById('interestOnly')
 const clearbtn = document.getElementById('clear')
 const empty = document.getElementById('empty')
 const complete = document.getElementById('complete')
+const main3 = document.getElementsByClassName('bud3')
 
 
 function output() {
@@ -67,8 +68,14 @@ function propDisplay() {
     complete.style.display = 'block'
 }
 
+/* Using .trim() removes any leading or trailing whitespace, so even if the field contains only spaces, it will count as empty. */
+
 function formError() {
     console.log('form not comeplete')
+
+    if (main3.value.trim() === '') {
+        main3.style.bordercolor = 'red';
+    }
 }
 
 button.addEventListener('click', (event) => {
