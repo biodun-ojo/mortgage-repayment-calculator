@@ -67,8 +67,13 @@ function propDisplay() {
     complete.style.display = 'block'
 }
 
+function formError() {
+    console.log('form not comeplete')
+}
+
 button.addEventListener('click', (event) => {
-    event.preventDefault();
+    event.preventDefault()
+    formError()
     propDisplay()
     output()
 })
