@@ -68,7 +68,7 @@ function propDisplay() {
     complete.style.display = 'block'
 }
 
-/* Using .trim() removes any leading or trailing whitespace, so even if the field contains only spaces, it will count as empty. */
+/* Using .trim() removes any leading or trailing whitespace, so even if the field contains only spaces, it will count as empty. 
 
 function formError() {
     console.log('form not comeplete')
@@ -78,9 +78,12 @@ function formError() {
     }
 }
 
+*/
+
+
 button.addEventListener('click', (event) => {
     event.preventDefault()
-    formError()
+    //formError()
     propDisplay()
     output()
 })
